@@ -1,0 +1,20 @@
+//B L O G S
+https://vrgamedevelopment.pro/how-to-create-an-augmented-reality-app-in-unity/
+https://programminghistorian.org/en/lessons/creating-mobile-augmented-reality-experiences-in-unity
+//Quickstart
+https://developers.google.com/ar/develop/unity/quickstart-android
+//Graphic???
+https://www.researchgate.net/publication/342676209_Virtual_Pet_Simulator_Game_Using_Augmented_Reality_on_Android_Platform
+
+//V I D E O S
+//Intro in AR
+https://www.youtube.com/watch?v=FGh7f-PaGQc
+https://www.youtube.com/watch?v=xguiSueY1Lw
+//Building for Android
+https://www.youtube.com/watch?v=75r3GCasmS4
+https://www.youtube.com/watch?v=0mpsiO2lCx0
+//How to make a pet game tutorial
+https://www.youtube.com/watch?v=JUgy7Lm3hH8&list=PLbCx65TBvT-QgTitVMCWGH1HQW_YfdMDK
+https://www.youtube.com/watch?v=E4J9McMN6vg
+//Even for iOS
+https://www.youtube.com/watch?v=0sdep3oMg2k&list=PLaLFrQQSVlLzk3_SOBr3-Uz_ZS1OyRriG&index=6&t=0s
