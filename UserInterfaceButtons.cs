@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using System.IO;
+using System;
 
 public class UserInterfaceButtons : MonoBehaviour
 {
@@ -16,10 +17,20 @@ public class UserInterfaceButtons : MonoBehaviour
 	bool repeatPositionDown = false;
 	bool repeatPositionLeft = false;
 	bool repeatPositionRight = false;
-	
+    bool quitBtn = false;
+    bool musicBtn = false;
+
 	void Update ()
 	{
-		if (repeatScaleUp) {
+        if (quitBtn){
+            QuitButton();
+        }
+
+        if (musicBtn){
+            MusicButton();
+        }
+
+        if (repeatScaleUp) {
 			ScaleUpButton ();
 		}
 
@@ -53,7 +64,17 @@ public class UserInterfaceButtons : MonoBehaviour
 
 	}
 
-	public void CloseAppButton ()
+    public void MusicButton()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void QuitButton()
+    {
+        Application.Quit();
+    }
+
+    public void CloseAppButton ()
 	{
 		Application.Quit ();
 	}
@@ -91,12 +112,12 @@ public class UserInterfaceButtons : MonoBehaviour
 	public void ScaleUpButtonRepeat ()
 	{
 		repeatScaleUp = true;
-		Debug.Log ("Up");
+		//Debug.Log ("Up");
 	}
 	public void ScaleDownButtonRepeat ()
 	{
 		repeatScaleDown = true;
-		Debug.Log ("Down");
+		//Debug.Log ("Down");
 	}
 	public void PositionDownButtonRepeat ()
 	{
@@ -118,44 +139,44 @@ public class UserInterfaceButtons : MonoBehaviour
 	public void ScaleUpButtonOff ()
 	{
 		repeatScaleUp = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	public void ScaleDownButtonOff ()
 	{
 		repeatScaleDown = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 
 	public void RotateLeftButtonOff ()
 	{
 		repeatRotateLeft = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 
 	public void RotateRightButtonOff ()
 	{
 		repeatRotateRight = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	public void PositionRightButtonOff ()
 	{
 		repeatPositionRight = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	public void PositionLeftButtonOff ()
 	{
 		repeatPositionLeft = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	public void PositionUpButtonOff ()
 	{
 		repeatPositionUp = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	public void PositionDownButtonOff ()
 	{
 		repeatPositionDown = false;
-		Debug.Log ("Off");
+		//Debug.Log ("Off");
 	}
 	
 	public void ScaleDownButton ()
@@ -192,6 +213,6 @@ public class UserInterfaceButtons : MonoBehaviour
 
 	public void AnyButton ()
 	{
-		Debug.Log ("Any");
+		//Debug.Log ("Any");
 	}
 }
